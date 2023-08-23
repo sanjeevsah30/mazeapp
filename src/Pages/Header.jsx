@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 import { useEffect, useState } from "react";
+import {PiTelevisionBold} from "react-icons/pi"
 
 const Header = () => {
   const [data, setData] = useState([]);
@@ -28,8 +29,8 @@ const Header = () => {
 
   return (
     <header className='max_width px-4 py-10'>
-      <h1 className='text-5xl font-bold text-center '>Trending Shows</h1>
-      <form className='m-5 flex flex-row border-none'>
+      <h1 className='text-5xl font-bold text-center flex items-center  justify-center'><PiTelevisionBold className="mr-2"/>TV Shows</h1>
+      <form className='my-5 flex flex-row border-none box-border'>
         <input
           className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight text-black focus:outline-none focus:shadow-outline   '
           type='text'
